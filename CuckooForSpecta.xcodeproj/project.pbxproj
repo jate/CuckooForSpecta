@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4FD53ED1C981A95A27664E /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4607123D56879976B28044 /* libPods-Specs.a */; };
 		AF798B1D1B023F34004FB7D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF798B1C1B023F34004FB7D6 /* main.m */; };
 		AF798B201B023F34004FB7D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF798B1F1B023F34004FB7D6 /* AppDelegate.m */; };
 		AF798B231B023F34004FB7D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF798B221B023F34004FB7D6 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06304F1C66F7BCD7CDDD40E6 /* Pods-Specs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.debug.xcconfig"; sourceTree = "<group>"; };
+		2D4607123D56879976B28044 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF798B171B023F34004FB7D6 /* CuckooForSpecta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuckooForSpecta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF798B1B1B023F34004FB7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF798B1C1B023F34004FB7D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		AF798B441B02423B004FB7D6 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF798B471B02423B004FB7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF798B481B02423B004FB7D6 /* Specs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Specs.m; sourceTree = "<group>"; };
+		B64FBC5AEBEEC39930D50191 /* Pods-Specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +58,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4FD53ED1C981A95A27664E /* libPods-Specs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		625DA823EFF23F93E75DD301 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06304F1C66F7BCD7CDDD40E6 /* Pods-Specs.debug.xcconfig */,
+				B64FBC5AEBEEC39930D50191 /* Pods-Specs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DAF6A6027BE029A91B97945 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D4607123D56879976B28044 /* libPods-Specs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF798B0E1B023F33004FB7D6 = {
 			isa = PBXGroup;
 			children = (
 				AF798B191B023F34004FB7D6 /* CuckooForSpecta */,
 				AF798B451B02423B004FB7D6 /* Specs */,
 				AF798B181B023F34004FB7D6 /* Products */,
+				625DA823EFF23F93E75DD301 /* Pods */,
+				8DAF6A6027BE029A91B97945 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF798B4C1B02423B004FB7D6 /* Build configuration list for PBXNativeTarget "Specs" */;
 			buildPhases = (
+				3E9725910CD7E3B018C065BF /* Check Pods Manifest.lock */,
 				AF798B401B02423B004FB7D6 /* Sources */,
 				AF798B411B02423B004FB7D6 /* Frameworks */,
 				AF798B421B02423B004FB7D6 /* Resources */,
+				1061FCBB0F6B3FD6623DDFB5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1061FCBB0F6B3FD6623DDFB5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Specs/Pods-Specs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E9725910CD7E3B018C065BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF798B131B023F33004FB7D6 /* Sources */ = {
@@ -365,6 +424,7 @@
 		};
 		AF798B4D1B02423B004FB7D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06304F1C66F7BCD7CDDD40E6 /* Pods-Specs.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -384,6 +444,7 @@
 		};
 		AF798B4E1B02423B004FB7D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64FBC5AEBEEC39930D50191 /* Pods-Specs.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -416,6 +477,7 @@
 				AF798B3C1B023F34004FB7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF798B4C1B02423B004FB7D6 /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +486,7 @@
 				AF798B4E1B02423B004FB7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
