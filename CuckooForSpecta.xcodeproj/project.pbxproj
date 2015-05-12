@@ -13,7 +13,18 @@
 		AF798B261B023F34004FB7D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF798B241B023F34004FB7D6 /* Main.storyboard */; };
 		AF798B281B023F34004FB7D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF798B271B023F34004FB7D6 /* Images.xcassets */; };
 		AF798B2B1B023F34004FB7D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF798B291B023F34004FB7D6 /* LaunchScreen.xib */; };
+		AF798B491B02423B004FB7D6 /* Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = AF798B481B02423B004FB7D6 /* Specs.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF798B4A1B02423B004FB7D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF798B0F1B023F33004FB7D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF798B161B023F33004FB7D6;
+			remoteInfo = CuckooForSpecta;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AF798B171B023F34004FB7D6 /* CuckooForSpecta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuckooForSpecta.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		AF798B251B023F34004FB7D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF798B271B023F34004FB7D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF798B2A1B023F34004FB7D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AF798B441B02423B004FB7D6 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF798B471B02423B004FB7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF798B481B02423B004FB7D6 /* Specs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Specs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AF798B141B023F33004FB7D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF798B411B02423B004FB7D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				AF798B191B023F34004FB7D6 /* CuckooForSpecta */,
+				AF798B451B02423B004FB7D6 /* Specs */,
 				AF798B181B023F34004FB7D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				AF798B171B023F34004FB7D6 /* CuckooForSpecta.app */,
+				AF798B441B02423B004FB7D6 /* Specs.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +102,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AF798B451B02423B004FB7D6 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				AF798B481B02423B004FB7D6 /* Specs.m */,
+				AF798B461B02423B004FB7D6 /* Supporting Files */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		AF798B461B02423B004FB7D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF798B471B02423B004FB7D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +139,24 @@
 			productReference = AF798B171B023F34004FB7D6 /* CuckooForSpecta.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AF798B431B02423B004FB7D6 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF798B4C1B02423B004FB7D6 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				AF798B401B02423B004FB7D6 /* Sources */,
+				AF798B411B02423B004FB7D6 /* Frameworks */,
+				AF798B421B02423B004FB7D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF798B4B1B02423B004FB7D6 /* PBXTargetDependency */,
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = AF798B441B02423B004FB7D6 /* Specs.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +168,10 @@
 				TargetAttributes = {
 					AF798B161B023F33004FB7D6 = {
 						CreatedOnToolsVersion = 6.3.1;
+					};
+					AF798B431B02423B004FB7D6 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = AF798B161B023F33004FB7D6;
 					};
 				};
 			};
@@ -127,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				AF798B161B023F33004FB7D6 /* CuckooForSpecta */,
+				AF798B431B02423B004FB7D6 /* Specs */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +202,13 @@
 				AF798B261B023F34004FB7D6 /* Main.storyboard in Resources */,
 				AF798B2B1B023F34004FB7D6 /* LaunchScreen.xib in Resources */,
 				AF798B281B023F34004FB7D6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF798B421B02423B004FB7D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF798B401B02423B004FB7D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF798B491B02423B004FB7D6 /* Specs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF798B4B1B02423B004FB7D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF798B161B023F33004FB7D6 /* CuckooForSpecta */;
+			targetProxy = AF798B4A1B02423B004FB7D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF798B241B023F34004FB7D6 /* Main.storyboard */ = {
@@ -277,6 +363,40 @@
 			};
 			name = Release;
 		};
+		AF798B4D1B02423B004FB7D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuckooForSpecta.app/CuckooForSpecta";
+			};
+			name = Debug;
+		};
+		AF798B4E1B02423B004FB7D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuckooForSpecta.app/CuckooForSpecta";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -294,6 +414,14 @@
 			buildConfigurations = (
 				AF798B3B1B023F34004FB7D6 /* Debug */,
 				AF798B3C1B023F34004FB7D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF798B4C1B02423B004FB7D6 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF798B4D1B02423B004FB7D6 /* Debug */,
+				AF798B4E1B02423B004FB7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
