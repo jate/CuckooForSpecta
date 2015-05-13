@@ -1,4 +1,3 @@
 language: objective-c
 install: ./setup.sh
-xcode_workspace: CuckooForSpecta.xcworkspace
-xcode_scheme: CuckooForSpecta
+script: bundle exec rake
