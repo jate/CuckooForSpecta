@@ -1,16 +1,27 @@
 task :default => :test
 
+desc "Clean"
+task :clean do
+  clean
+end
+
 desc "Build CuckooForSpecta"
 task :build do
+  Rake::Task[:clean].invoke
   build
 end
 
 desc "Run Tests"
 task :test do
+  Rake::Task[:clean].invoke
   run_tests
 end
 
 private
+
+def clean
+  sh "xcodebuild -alltargets clean"
+end
 
 def build
   execute_xcodebuild
@@ -22,7 +33,7 @@ def run_tests
 end
 
 def execute_xcodebuild(build_action = "build")
-  sh "xcodebuild -workspace CuckooForSpecta.xcworkspace -scheme 'CuckooForSpecta' -sdk 'iphonesimulator' -configuration Release clean #{build_action} | xcpretty -tc ; exit ${PIPESTATUS[0]}" rescue nil
+  sh "xcodebuild -workspace CuckooForSpecta.xcworkspace -scheme 'CuckooForSpecta' -sdk iphonesimulator -configuration Release #{build_action} | xcpretty -tc ; exit ${PIPESTATUS[0]}" rescue nil
 end
 
 def tests_failed
