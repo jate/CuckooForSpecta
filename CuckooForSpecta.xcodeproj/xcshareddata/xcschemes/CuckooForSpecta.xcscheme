@@ -9,20 +9,6 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF798B431B02423B004FB7D6"
-               BuildableName = "Specs.xctest"
-               BlueprintName = "Specs"
-               ReferencedContainer = "container:CuckooForSpecta.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
@@ -31,6 +17,20 @@
                BlueprintIdentifier = "AF798B161B023F33004FB7D6"
                BuildableName = "CuckooForSpecta.app"
                BlueprintName = "CuckooForSpecta"
+               ReferencedContainer = "container:CuckooForSpecta.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF798B431B02423B004FB7D6"
+               BuildableName = "Specs.xctest"
+               BlueprintName = "Specs"
                ReferencedContainer = "container:CuckooForSpecta.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
