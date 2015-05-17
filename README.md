@@ -1,7 +1,7 @@
 CuckooForSpecta [![Build Status](https://travis-ci.org/rbaumbach/CuckooForSpecta.svg)](https://travis-ci.org/rbaumbach/CuckooForSpecta)
 ===============
 
-Cuckoo For Cocoa Dev using Specta, Expecta and OCMock.  This will be used for Cuckoo for Cocoa Dev blog posts on BDD.
+Cuckoo For Cocoa Dev using [Specta](https://github.com/specta/specta), [Expecta](https://github.com/specta/expecta) and [OCMock](https://github.com/erikdoe/ocmock).  This will be used for Cuckoo for Cocoa Dev blog posts on BDD.
 
 ## Setup
 
