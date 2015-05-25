@@ -14,6 +14,7 @@
 		AF798B261B023F34004FB7D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF798B241B023F34004FB7D6 /* Main.storyboard */; };
 		AF798B281B023F34004FB7D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF798B271B023F34004FB7D6 /* Images.xcassets */; };
 		AF798B2B1B023F34004FB7D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF798B291B023F34004FB7D6 /* LaunchScreen.xib */; };
+		AF7F2D801B099CAB00A06940 /* RealFakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F2D7F1B099CAB00A06940 /* RealFakeAFHTTPSessionManager.m */; };
 		AFD8656B1B093C43009ED984 /* CuckooUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD8656A1B093C43009ED984 /* CuckooUser.m */; };
 		AFD8656C1B093C43009ED984 /* CuckooUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD8656A1B093C43009ED984 /* CuckooUser.m */; };
 		AFD8656F1B093D3E009ED984 /* CuckooUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD8656E1B093D3E009ED984 /* CuckooUserSpec.m */; };
@@ -48,6 +49,8 @@
 		AF798B2A1B023F34004FB7D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AF798B441B02423B004FB7D6 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF798B471B02423B004FB7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7F2D7E1B099CAB00A06940 /* RealFakeAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealFakeAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		AF7F2D7F1B099CAB00A06940 /* RealFakeAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealFakeAFHTTPSessionManager.m; sourceTree = "<group>"; };
 		AFD865691B093C43009ED984 /* CuckooUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuckooUser.h; sourceTree = "<group>"; };
 		AFD8656A1B093C43009ED984 /* CuckooUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuckooUser.m; sourceTree = "<group>"; };
 		AFD8656E1B093D3E009ED984 /* CuckooUserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuckooUserSpec.m; sourceTree = "<group>"; };
@@ -164,9 +167,19 @@
 		AF7F2D7C1B093F8D00A06940 /* BDD Advanced Stuff - Part 1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF7F2D7D1B099C8F00A06940 /* Real Fakes */,
 				AFD8656E1B093D3E009ED984 /* CuckooUserSpec.m */,
 			);
 			name = "BDD Advanced Stuff - Part 1";
+			sourceTree = "<group>";
+		};
+		AF7F2D7D1B099C8F00A06940 /* Real Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				AF7F2D7E1B099CAB00A06940 /* RealFakeAFHTTPSessionManager.h */,
+				AF7F2D7F1B099CAB00A06940 /* RealFakeAFHTTPSessionManager.m */,
+			);
+			name = "Real Fakes";
 			sourceTree = "<group>";
 		};
 		AFD8656D1B093C47009ED984 /* AppCode */ = {
@@ -359,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7F2D801B099CAB00A06940 /* RealFakeAFHTTPSessionManager.m in Sources */,
 				AFD8656C1B093C43009ED984 /* CuckooUser.m in Sources */,
 				AFD8656F1B093D3E009ED984 /* CuckooUserSpec.m in Sources */,
 			);

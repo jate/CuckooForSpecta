@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,65 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iU9-jP-K7q">
+                                <rect key="frame" x="276" y="20" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewi-Al-eBB">
+                                <rect key="frame" x="260" y="78" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="networkUsername" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajp-ab-BZx">
+                                <rect key="frame" x="230" y="107" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDR-db-zRz">
+                                <rect key="frame" x="277" y="136" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="networkEmail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mW2-9i-rXk">
+                                <rect key="frame" x="248" y="165" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="networkName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hC-c2-JSl">
+                                <rect key="frame" x="247" y="49" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ewi-Al-eBB" firstAttribute="top" secondItem="4hC-c2-JSl" secondAttribute="bottom" constant="8" id="7r1-LX-ZZ0"/>
+                            <constraint firstAttribute="centerX" secondItem="iU9-jP-K7q" secondAttribute="centerX" id="8ym-kS-FAi"/>
+                            <constraint firstItem="sDR-db-zRz" firstAttribute="top" secondItem="ajp-ab-BZx" secondAttribute="bottom" constant="8" id="BzV-q5-wVv"/>
+                            <constraint firstAttribute="centerX" secondItem="4hC-c2-JSl" secondAttribute="centerX" id="E7x-Yg-H9C"/>
+                            <constraint firstItem="4hC-c2-JSl" firstAttribute="top" secondItem="iU9-jP-K7q" secondAttribute="bottom" constant="8" id="G1n-SZ-MzS"/>
+                            <constraint firstAttribute="centerX" secondItem="mW2-9i-rXk" secondAttribute="centerX" id="JGP-AH-XSu"/>
+                            <constraint firstItem="mW2-9i-rXk" firstAttribute="top" secondItem="sDR-db-zRz" secondAttribute="bottom" constant="8" id="NTN-pM-rRn"/>
+                            <constraint firstAttribute="centerX" secondItem="sDR-db-zRz" secondAttribute="centerX" id="Yhs-qR-sBy"/>
+                            <constraint firstItem="ajp-ab-BZx" firstAttribute="top" secondItem="ewi-Al-eBB" secondAttribute="bottom" constant="8" id="qbp-pF-ZWx"/>
+                            <constraint firstItem="iU9-jP-K7q" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="t8T-5k-Vat"/>
+                            <constraint firstAttribute="centerX" secondItem="ewi-Al-eBB" secondAttribute="centerX" id="yfZ-Ib-ufI"/>
+                            <constraint firstAttribute="centerX" secondItem="ajp-ab-BZx" secondAttribute="centerX" id="zhz-uK-rVN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="mW2-9i-rXk" id="wxv-Wi-4qR"/>
+                        <outlet property="nameLabel" destination="4hC-c2-JSl" id="2z0-9n-pwx"/>
+                        <outlet property="usernameLabel" destination="ajp-ab-BZx" id="h2Y-Xe-z3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
