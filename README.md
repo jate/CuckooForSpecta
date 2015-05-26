@@ -20,3 +20,7 @@ $ bundle exec rake
 ```
 
 ## Cuckoo For Cocoa Dev
+
+### BDD Using Specta Part 1 - Advanced Techniques
+
+This portion of the project contains the code and tests demonstrated at [BDD Advanced Techniques - Part 1.](http://cuckooforcocoadev.com/blog/2015/05/25/behavioral-driven-development-bdd-using-specta-part-1-advanced-techniques/)
