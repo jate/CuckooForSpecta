@@ -1,8 +1,5 @@
 @import UIKit;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@interface TestingAppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
-
 @end
-

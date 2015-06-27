@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F4FD53ED1C981A95A27664E /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4607123D56879976B28044 /* libPods-Specs.a */; };
+		9448845D1B3C43370037DC95 /* TestingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9448845C1B3C43370037DC95 /* TestingAppDelegate.m */; };
 		AF798B1D1B023F34004FB7D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF798B1C1B023F34004FB7D6 /* main.m */; };
 		AF798B201B023F34004FB7D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF798B1F1B023F34004FB7D6 /* AppDelegate.m */; };
 		AF798B231B023F34004FB7D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF798B221B023F34004FB7D6 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		2D4607123D56879976B28044 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45010823AC6F3E1823B05E3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7153C7AC8A55439F267056A8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9448845B1B3C43370037DC95 /* TestingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingAppDelegate.h; sourceTree = "<group>"; };
+		9448845C1B3C43370037DC95 /* TestingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingAppDelegate.m; sourceTree = "<group>"; };
 		AF798B171B023F34004FB7D6 /* CuckooForSpecta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuckooForSpecta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF798B1B1B023F34004FB7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF798B1C1B023F34004FB7D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +100,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9448845A1B3C431E0037DC95 /* BDD Advanced Stuff - Part 2 */ = {
+			isa = PBXGroup;
+			children = (
+				9448845B1B3C43370037DC95 /* TestingAppDelegate.h */,
+				9448845C1B3C43370037DC95 /* TestingAppDelegate.m */,
+			);
+			name = "BDD Advanced Stuff - Part 2";
+			sourceTree = "<group>";
+		};
 		AF798B0E1B023F33004FB7D6 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				AF7F2D7C1B093F8D00A06940 /* BDD Advanced Stuff - Part 1 */,
+				9448845A1B3C431E0037DC95 /* BDD Advanced Stuff - Part 2 */,
 				AF798B461B02423B004FB7D6 /* Supporting Files */,
 			);
 			path = Specs;
@@ -373,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF7F2D801B099CAB00A06940 /* RealFakeAFHTTPSessionManager.m in Sources */,
+				9448845D1B3C43370037DC95 /* TestingAppDelegate.m in Sources */,
 				AFD8656C1B093C43009ED984 /* CuckooUser.m in Sources */,
 				AFD8656F1B093D3E009ED984 /* CuckooUserSpec.m in Sources */,
 			);
